@@ -4,30 +4,27 @@
   <meta charset="UTF-8">
   <title>Cari Film + Fitur Lengkap</title>
   <link rel="stylesheet" href="styles.css"> <!-- Menghubungkan file CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-  <header>
-    <nav>
-    <div class="nav-logo">
-      <img src="images/headerr.png" alt="">
+  <nav class="navbar">
+    <div class="navbar-brand">Cari Film</div>
+    <div class="search-container hidden">
+      <input type="text" id="searchInput" class="search-input" placeholder="Masukkan judul film...">
+      <button class="search-button" onclick="searchMovie()">Cari</button>
     </div>
-  <div id="main">
-      <ul class="nav-link">
-        <li class="link"><a href="index.html">Home</a></li>
-      </ul>
+    <div class="search-icon">
+      <i class="fas fa-search"></i>
+    </div>
   </nav>
-  </header>
-  <h1>&nbsp;Cari Film</h1>
 
-  <!-- Kolom Pencarian -->
-  <input type="text" id="searchInput" placeholder="Masukkan judul film...">
-  <button onclick="searchMovie()">Cari</button>
+  <div class="content">
+    <div id="movies"></div>
 
-  <div id="movies"></div> <!-- Tempat hasil pencarian film -->
-
-  <h2 id="recommendationTitle" style="display:none;">Rekomendasi Film</h2>
-  <div id="recommendations"></div> <!-- Tempat rekomendasi film -->
-
+    <h2 id="recommendationTitle" style="display:none;">Rekomendasi Film</h2>
+    <div id="recommendations"></div>
+  </div>
+  
   <script src="script.js"></script> <!-- Menghubungkan file JS -->
 </body>
 </html>

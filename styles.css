@@ -1,78 +1,84 @@
-* {
-  padding: 0;
-  margin: 0;
-}
-  body {
+body {
   font-family: Arial, sans-serif;
+  margin: 0;
   background: #f0f0f0;
 }
-header{
-  position: sticky;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  padding: 5px 5%;
-  background-color: #032541
-}
-nav{
+
+.navbar {
+  background-color: #032541;
+  color: white;
+  padding: 15px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/*nav .nav-logo{
-  height: 50px;
-  margin-top: -35px;
-  max-width: 100%;
-  transform: scale(0.5);
-  margin-left: px;*/
 
-nav .nav-link{
-  list-style: none;
-  display: flex;
-}
-.nav-link .link{
-  margin-left: 50px;
-}
-.nav-link .link a{
-  position: relative;
-  text-decoration: none;
-  color: #f0f0f0;
+.navbar-brand {
   font-size: 20px;
-  font-weight: 500;
-  padding: 10px 0;
+  font-weight: bold;
 }
-input[type="text"] {
-  padding: 10px;
-  width: 300px;
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  width: 400px;
+  border: none;
+  border-radius: 5px 0 0 5px;
   font-size: 16px;
 }
-button {
+
+.search-button {
+  background-color: #00BFFF;
+  color: white;
+  border: none;
   padding: 8px 12px;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
   font-size: 16px;
-  margin-left: 5px;
 }
+
+.search-icon {
+  font-size: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.search-container.hidden .search-input,
+.search-container.hidden .search-button {
+  display: none;
+}
+
+.content {
+  padding: 20px;
+}
+
 .movie, .recommendation {
   background: #fff;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin: 20px 0;
   padding: 15px;
   display: flex;
-  margin-left: 20px;
   align-items: flex-start;
   text-decoration: none;
   color: inherit;
   transition: transform 0.2s;
 }
+
 .movie:hover, .recommendation:hover {
   transform: scale(1.02);
 }
+
 .movie img, .recommendation img {
   width: 100px;
   border-radius: 8px;
   margin-right: 15px;
 }
+
 h2 {
   margin-top: 40px;
 }
