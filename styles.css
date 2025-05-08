@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+  body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+}
+header{
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  padding: 5px 5%;
+  background-color: #032541
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/*nav .nav-logo{
+  height: 50px;
+  margin-top: -35px;
+  max-width: 100%;
+  transform: scale(0.5);
+  margin-left: px;*/
+
+nav .nav-link{
+  list-style: none;
+  display: flex;
+}
+.nav-link .link{
+  margin-left: 50px;
+}
+.nav-link .link a{
+  position: relative;
+  text-decoration: none;
+  color: #f0f0f0;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 0;
+}
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+button {
+  padding: 8px 12px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.movie, .recommendation {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 20px 0;
+  padding: 15px;
+  display: flex;
+  margin-left: 20px;
+  align-items: flex-start;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+.movie:hover, .recommendation:hover {
+  transform: scale(1.02);
+}
+.movie img, .recommendation img {
+  width: 100px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+h2 {
+  margin-top: 40px;
+}
